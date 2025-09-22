@@ -1,0 +1,57 @@
+🛒 E-Commerce Store Database (MySQL)
+
+A full-featured relational database system for an e-commerce store, built with MySQL.
+This schema models real-world business needs such as customers, products, inventory, orders, payments, reviews, and more.
+
+📌 Overview
+
+This project demonstrates how to design and implement a complete Database Management System (DBMS) using relational principles.
+It includes:
+
+Normalized table structures
+
+Proper constraints (PK, FK, UNIQUE, NOT NULL, CHECK)
+
+One-to-One, One-to-Many, and Many-to-Many relationships
+
+Business logic with triggers and stored procedures
+
+Views for simplified reporting
+
+✨ Features
+
+👤 Users & Roles – Customers, employees, and admins with role-based access
+
+🏠 Addresses – Multiple shipping/billing addresses per user
+
+📦 Products & Categories – Support for multiple categories, product images, and stock management
+
+🛒 Cart & Wishlist – Persistent shopping carts and customer wishlists
+
+📑 Orders & Payments – Orders with multiple items, Mpesa/card/bank payments, and partial upfront payments
+
+🚚 Shipments – Track delivery status and carriers
+
+⭐ Reviews – Customers can leave product reviews and ratings
+
+🔒 Audit Logs – Record actions for accountability
+
+⚡ Triggers & Stored Procedures – Automatic stock checks, inventory updates, and half-payment rule
+
+📊 Views – Quick access to common queries like stock levels and order summaries
+
+🗂️ Database Schema (Highlights)
+
+users ↔ roles (Many-to-Many)
+
+users ↔ addresses (One-to-Many)
+
+products ↔ categories (Many-to-Many)
+
+orders ↔ order_items (One-to-Many)
+
+orders ↔ payments (One-to-One/Many)
+
+orders ↔ shipments (One-to-One)
+
+products ↔ reviews (One-to-Many)
